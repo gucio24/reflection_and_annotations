@@ -1,4 +1,4 @@
-package com.moje.basicstrong;
+package com.moje.basicstrong.reflection;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
@@ -22,7 +22,7 @@ public class ReflectionDemo {
 
     //        MyClass myClass = new MyClass();
 
-    Class<?> clazz = Class.forName("com.moje.basicstrong.MyClass");
+    Class<?> clazz = Class.forName("com.moje.basicstrong.reflection.MyClass");
 //    Class<?> clazz = MyClass.class;
     Constructor<?> declaredConstructor = clazz.getDeclaredConstructor();
     declaredConstructor.setAccessible(true);
